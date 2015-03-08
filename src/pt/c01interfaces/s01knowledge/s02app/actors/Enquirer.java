@@ -14,14 +14,13 @@ public class Enquirer implements IEnquirer
 
     public Enquirer()
 	{
-        animais = {"aranha","camarao","humano","pikachu","tiranossauro"};
 	}
 
 
 	@Override
 	public void connect(IResponder responder)
 	{
-		java.util.Set<String> perguntados = new java.util.HashSet<String>();
+        java.util.Set<String> perguntados = new java.util.HashSet<String>();
 		IBaseConhecimento bc = new BaseConhecimento();
 		IDeclaracao decl;
 		boolean primeira;
