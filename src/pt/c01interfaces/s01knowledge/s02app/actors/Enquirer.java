@@ -25,10 +25,11 @@ public class Enquirer implements IEnquirer
 	@Override
 	public void connect(IResponder responder)
 	{
-        java.util.Set<String> perguntados = new java.util.HashSet<String>();
+        java.util.Hashtable<String,Boolean> perguntados = new java.util.Hashtable<String,Boolean>();
 		IDeclaracao decl;
 		boolean primeira;
 		boolean acertei = false;
+		Boolean resposta = true;
 
 		for(int i = 0; i < animais.length && !acertei; i++){
 
@@ -39,9 +40,15 @@ public class Enquirer implements IEnquirer
 			do{
 				if(primeira) primeira = false;
 				else decl = obj.proxima();
-				while(decl != null && perguntados.contains(decl.getPropriedade())) decl = obj.proxima();
-				if(decl != null) perguntados.add(decl.getPropriedade());
-			}while (decl != null && responder.ask(decl.getPropriedade()).equalsIgnoreCase(decl.getValor()));
+				while(decl != null && perguntados.containsKey(decl.getPropriedade())){
+					resposta = perguntados.get(decl.getPropriedade());
+					decl = obj.proxima();
+				}
+				if(decl != null){
+					resposta = responder.ask(decl.getPropriedade()).equalsIgnoreCase(decl.getValor());
+					perguntados.put(decl.getPropriedade(),resposta);
+				}
+			}while (decl != null && resposta);
 
 			if (decl == null)
 				acertei = responder.finalAnswer(animais[i]);
