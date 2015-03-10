@@ -7,13 +7,18 @@ import pt.c01interfaces.s01knowledge.s01base.inter.IEnquirer;
 import pt.c01interfaces.s01knowledge.s01base.inter.IObjetoConhecimento;
 import pt.c01interfaces.s01knowledge.s01base.inter.IResponder;
 
+
 public class Enquirer implements IEnquirer
 {
     IObjetoConhecimento obj;
-    String animais[] = {"aranha","camarao","humano","pikachu","tiranossauro"};
+    IBaseConhecimento bc;
+    String animais[];
 
     public Enquirer()
 	{
+    	bc = new BaseConhecimento();
+    	animais = new String[5];
+    	animais = bc.listaNomes();
 	}
 
 
@@ -21,7 +26,6 @@ public class Enquirer implements IEnquirer
 	public void connect(IResponder responder)
 	{
         java.util.Set<String> perguntados = new java.util.HashSet<String>();
-		IBaseConhecimento bc = new BaseConhecimento();
 		IDeclaracao decl;
 		boolean primeira;
 		boolean acertei = false;
