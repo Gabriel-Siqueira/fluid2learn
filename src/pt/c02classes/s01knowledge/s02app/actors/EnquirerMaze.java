@@ -16,15 +16,15 @@ public class EnquirerMaze implements IEnquirer {
 	}
 	
 	public boolean acha_saida(String direcao, int x, int y){
-		HashSet<Integer> vizitados_linha;
+		HashSet<Integer> visitados_linha;
 		if(!vizitado.containsKey(y)){
-			vizitados_linha = new HashSet<Integer>();
-			vizitado.put(y, vizitados_linha);
+			visitados_linha = new HashSet<Integer>();
+			vizitado.put(y, visitados_linha);
 		}else{
-			vizitados_linha = vizitado.get(y);
-			if(vizitados_linha.contains(x)) return false;
+			visitados_linha = vizitado.get(y);
+			if(visitados_linha.contains(x)) return false;
 		}
-		vizitados_linha.add(x);
+		visitados_linha.add(x);
 		String resposta = responder.ask(direcao); 
 		switch(resposta){
 			case "parede": return false;
