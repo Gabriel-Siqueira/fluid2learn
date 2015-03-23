@@ -251,9 +251,9 @@
   <children xmi:type="notation:Shape" xmi:id="_HwdxCdArEeS3aZKjM-faWQ" type="2008">
     <children xmi:type="notation:DecorationNode" xmi:id="_HwdxCtArEeS3aZKjM-faWQ" type="5029"/>
     <children xmi:type="notation:BasicCompartment" xmi:id="_HwdxC9ArEeS3aZKjM-faWQ" type="7017">
-      <children xmi:type="notation:Shape" xmi:id="_fXTSYNC6EeSvbZ04veAe3w" type="3012">
-        <element xmi:type="uml:Property" href="model.uml#_fXPoANC6EeSvbZ04veAe3w"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_fXTSYdC6EeSvbZ04veAe3w"/>
+      <children xmi:type="notation:Shape" xmi:id="_vuKb8NGSEeS8Dcn0KJfmEw" type="3012">
+        <element xmi:type="uml:Property" href="model.uml#_vtyBcNGSEeS8Dcn0KJfmEw"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_vuKb8dGSEeS8Dcn0KJfmEw"/>
       </children>
       <styles xmi:type="notation:TitleStyle" xmi:id="_HwdxDNArEeS3aZKjM-faWQ"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_HwdxDdArEeS3aZKjM-faWQ"/>

@@ -91,7 +91,7 @@
     <packagedElement xmi:type="uml:GeneralizationSet" xmi:id="_Gs3_QNAmEeS3aZKjM-faWQ" name="GeneralizationSet_EnquirerRescue_EnquiresMaze"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_HwatoNArEeS3aZKjM-faWQ" name="EnquirerRescue">
       <generalization xmi:type="uml:Generalization" xmi:id="_N3RY4NC0EeSvbZ04veAe3w" general="_HwbUsNArEeS3aZKjM-faWQ"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_fXPoANC6EeSvbZ04veAe3w" name="enfrentado" type="_mmmKoNC6EeSvbZ04veAe3w"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vtyBcNGSEeS8Dcn0KJfmEw" name="enfrentado" visibility="private" type="_mmmKoNC6EeSvbZ04veAe3w"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_HwatotArEeS3aZKjM-faWQ" name="EnquiresMaze">
       <generalization xmi:type="uml:Generalization" xmi:id="_M92dkNC0EeSvbZ04veAe3w" general="_HwbUsNArEeS3aZKjM-faWQ"/>
@@ -121,19 +121,19 @@
     <packagedElement xmi:type="uml:Interface" xmi:id="_P8ncINCxEeSvbZ04veAe3w" name="IStatistics"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_viQIMNAkEeS3aZKjM-faWQ" name="ResponderRescue">
       <generalization xmi:type="uml:Generalization" xmi:id="_vlQy8NCzEeSvbZ04veAe3w" general="_m9hY8NAiEeS3aZKjM-faWQ"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_yfIe4NC6EeSvbZ04veAe3w" name="nivel">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_yfIe4NC6EeSvbZ04veAe3w" name="nivel" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_1uHjYNC6EeSvbZ04veAe3w" name="sala">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1uHjYNC6EeSvbZ04veAe3w" name="sala" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_CiemsNC7EeSvbZ04veAe3w" name="conquistado" type="_mmmKoNC6EeSvbZ04veAe3w"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_CiemsNC7EeSvbZ04veAe3w" name="conquistado" visibility="private" type="_mmmKoNC6EeSvbZ04veAe3w"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_Y7l0MNCvEeSvbZ04veAe3w" name="&lt;&lt;constructor>>ResponderRescue">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_oGAWoNC0EeSvbZ04veAe3w" name="challenge">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_JofAENC7EeSvbZ04veAe3w" name="fight">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_JofAENC7EeSvbZ04veAe3w" name="fight" visibility="private">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOIEoNC7EeSvbZ04veAe3w" direction="return">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
         </ownedParameter>
@@ -150,4 +150,5 @@
     </profileApplication>
   </uml:Model>
   <ActionLanguage:TextualRepresentation xmi:id="_XqheENAkEeS3aZKjM-faWQ" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_ipSQYNGSEeS8Dcn0KJfmEw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
 </xmi:XMI>
